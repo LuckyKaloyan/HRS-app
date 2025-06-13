@@ -27,6 +27,6 @@ jobs:
   - name: Deploy to production
     uses: johnbeynon/render-deploy-action@v0.0.8
     with:
-      service-id: ${{secrets.API_TOKEN_RENDER_BABE}}
       api-key: ${{secrets.SERVICE_ID}}
+      service-id: ${{secrets.API_TOKEN_RENDER_BABE}}
       wait-for-success: true
